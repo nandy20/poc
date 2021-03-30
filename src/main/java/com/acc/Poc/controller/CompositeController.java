@@ -13,7 +13,7 @@ public class CompositeController {
 	@PostMapping("/sfObj")
 	public void executeComposite(@RequestBody salesforceObj obj ) {
 		
-		System.out.println(obj.getEntityName());
+		
 		
 	}
 
