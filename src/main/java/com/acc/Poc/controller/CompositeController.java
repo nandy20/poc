@@ -20,7 +20,7 @@ public class CompositeController {
 	@PostMapping("/sfObj")
 	public void executeComposite(@RequestBody salesforceObj obj ) {
 			
-		executeApi.run(obj.getEntityName());
+		executeApi.run(obj);
 	}
 
 }

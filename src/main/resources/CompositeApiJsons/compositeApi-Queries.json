@@ -1,0 +1,4 @@
+{
+    "contact":"SELECT  Id, Name, Title, Email, Phone, OtherPhone, MailingStreet, MailingCity, MailingState, MailingCountry, MailingPostalCode FROM Contact"
+    
+}

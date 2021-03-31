@@ -1,5 +1,7 @@
 package com.acc.Poc.enums;
 
+import com.acc.Poc.dtos.salesforceObj;
+
 public enum CompositeFileSelectorEnum {
 	
 	CONTACT("contact","src\\main\\resources\\CompositeApiJsons\\contact-compositeApi.json");
@@ -16,9 +18,9 @@ public enum CompositeFileSelectorEnum {
 		this.path = path;
 	}
 	
-	public static  String getCompositeJson(String key) {
+	public static  String getCompositeJson(salesforceObj key) {
 		for(CompositeFileSelectorEnum type:values()) {
-			if(type.entity.equals(key)){
+			if(type.entity.equals(key.getEntityName())){
 				return type.path;
 			}
 		}

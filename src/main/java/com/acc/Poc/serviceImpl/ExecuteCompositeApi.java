@@ -12,9 +12,7 @@ public class ExecuteCompositeApi {
 	@Autowired
 	ProcessCompositeApi processApi;
 
-	public void run(String obj) {
-		String entityPath = CompositeFileSelectorEnum.getCompositeJson(obj);
-		processApi.process(entityPath);
-		System.out.println(entityPath);
+	public void run(salesforceObj obj) {	
+		processApi.process(obj);
 	}
 }

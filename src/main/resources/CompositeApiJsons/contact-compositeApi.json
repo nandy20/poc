@@ -52,7 +52,7 @@
                         "scope": "runtime"
                     }
                 ],
-                "requestBody": "<?xml version=\"1.0\" encoding=\"UTF-8\"?> <jobInfo xmlns=\"http://www.force.com/2009/06/asyncapi/dataload\"> <operation>query</operation> <object>Contact</object> <concurrencyMode>Parallel</concurrencyMode> <contentType>CSV</contentType> </jobInfo>",
+                "requestBody": "<?xml version=\"1.0\" encoding=\"UTF-8\"?> <jobInfo xmlns=\"http://www.force.com/2009/06/asyncapi/dataload\"> <operation>query</operation> <object>$ENTITY</object> <concurrencyMode>Parallel</concurrencyMode> <contentType>CSV</contentType> </jobInfo>",
                 "store": [
                     "id"
                 ]
@@ -81,7 +81,7 @@
                         "value": "{1.sessionId}"
                     }
                 ],
-                "requestBody": "SELECT  Id, Name, Title, Email, Phone, OtherPhone, MailingStreet, MailingCity, MailingState, MailingCountry, MailingPostalCode FROM Contact",
+                "requestBody":"",
                 "store": [
                     "id"
                 ]
